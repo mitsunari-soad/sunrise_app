@@ -1,0 +1,15 @@
+.sunrise-main{
+  height:100vh;
+  width: 100vw;
+  display: flex;
+  
+  .side-bar{
+    background:green;
+    width: 20%;
+  }
+  
+  .main-contents{
+    background: lightblue;
+    width: 80%;
+  }
+}
