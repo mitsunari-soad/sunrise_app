@@ -1,0 +1,75 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.box{
+  width: 60vw;
+  height: 80vh;
+  margin: 60px auto 0;
+  border-radius: 8px;
+  border: 1px #ddd solid;
+  background-color: ivory;
+  .box-inner{
+    padding: 20px 26px;
+    text-align: center;
+    .field{
+      .name-field{
+        margin-bottom: 20px;
+      }
+      .email-field{
+        margin-bottom: 20px;
+      }
+      .password-field{
+        margin-bottom: 20px;
+      }
+      .confirmation-field{
+        margin-bottom: 20px;
+      }
+
+      .name-field label,.email-field label,.password-field label,.remember-field label,.confirmation-field label{
+        font-weight: 700;
+        font-size: 20px;
+        padding-left: 2px;
+        padding-bottom: 2px;
+      }
+      .name-field input[type="text"],.email-field input[type="email"],.password-field input[type="password"],
+      .confirmation-field input[type="password"]{
+        border-style: none;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #a6a6a6;
+        box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
+        border-radius: 3px;
+        padding: 0 7px;
+      }
+      .actions input[type="submit"]{
+        border-style: none;
+        width: 100%;
+        height: 31px;
+        background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+        border-radius: 3px;
+        border: 1px #a88734 solid;
+        margin: 50 auto;
+        
+      }
+      .forgot-password{
+        height: 30px;
+        font-size: 20px;
+        padding-top: 20px;
+      }
+    }
+    
+  }
+}
+
+h1{
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  color: #111111;
+}
