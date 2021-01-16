@@ -1,0 +1,11 @@
+<div class = "contents">
+    <div class = "container">
+      <h3>投稿する</h3>
+      <%= form_with model: @photo, url: photo_index_path, local: true do |f| %>
+        <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture_in"}) %><br>
+        <%= f.file_field :image, class:"image-box" %><br>
+        <%= f.text_area :introduction,class:"image-introduction", placeholder: "text" %><br>
+        <%= f.submit "送信して" %>
+      <% end %>
+    </div>
+</div>

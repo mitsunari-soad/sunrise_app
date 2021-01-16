@@ -1,15 +1,24 @@
 <div class='introduction'>
-
+  ここに説明
 </div>
 
 <section class="card">
-  <img class="card-img" src="images/bear.jpg" alt="ないよ">
-  <div class="card-content">
-    <h1 class="card-users">名前</h1>
-    <p class="card-text">テキスト</p>
-  </div>
-  <div class="card-link">
-    <a href="http://webcreatorbox.com/about">About</a>
-    <a href="http://webcreatorbox.com/">Website</a>
-  </div>
+  <% @photo.each do |photo|%>
+    <div class="card-box">
+      <%= link_to new_photo_path do%>
+        <div class="card-content" style="background-image: url(<%= rails_blob_path(photo.image) %>);"></div>
+        <p class="card-users">
+            <%= photo.user.nickname%>
+        </p>
+       
+        <p class="card-introduction">
+            <%= photo.introduction %>
+        </p>
+      <% end %>
+        <div class="card-link">
+          <a href="http://webcreatorbox.com/about">About</a>
+          <a href="http://webcreatorbox.com/">Website</a>
+        </div>
+    </div>  
+  <% end %>
 </section> 
