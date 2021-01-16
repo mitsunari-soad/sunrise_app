@@ -14,4 +14,18 @@
 .sunrise-main .main-contents {
   background: lightblue;
   width: 80%;
+  overflow: scroll;
+}
+
+.nav-bar {
+  background-color: lightcoral;
+}
+
+.nav-bar .notice {
+  font-size: 15px;
+  text-align: center;
+}
+
+.nav-bar .alert {
+  text-align: center;
 }
