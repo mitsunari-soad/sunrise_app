@@ -2,10 +2,13 @@
   height:100vh;
   width: 100vw;
   display: flex;
+  background: lightblue;
   
   .side-bar{
     background:green;
     width: 20%;
+    border-radius: 10px;
+    margin: 20px;
   }
   
   .main-contents{
@@ -17,6 +20,8 @@
 
 .nav-bar{
   background-color: lightcoral;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px red;
   .notice{
     font-size: 15px;
     text-align: center;
