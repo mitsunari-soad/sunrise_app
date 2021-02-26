@@ -30,7 +30,6 @@
 
 .photo-show .detail-photo {
   width: 20%;
-  background-color: #eee;
   border: 1px solid #dedede;
   font-size: 14px;
   text-align: center;
@@ -42,6 +41,12 @@
   border: 1px solid #dedede;
   font-size: 14px;
   word-break: break-all;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1517495306984-f84210f9daa8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80");
+  background-position: center;
+  background-size: cover;
 }
 
 p {

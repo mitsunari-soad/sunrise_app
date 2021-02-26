@@ -1,4 +1,4 @@
-.card {
+.sunrise-main .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,9 +14,9 @@
   width: 90%;
 }
 
-.card .card-box {
-  min-width: 200px;
-  min-height: 200px;
+.sunrise-main .card .card-box {
+  min-width: 150px;
+  min-height: 100px;
   margin: 10px;
   background: #fff;
   border-radius: 10px;
@@ -24,14 +24,14 @@
           box-shadow: 0 2px 5px red;
 }
 
-.card .card-box .card-content {
+.sunrise-main .card .card-box .card-content {
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-size: cover;
   background: center;
   border-radius: 10px;
 }
 
-.card .card-box .card-users, .card .card-box .card-introduction, .card .card-box .card-link {
+.sunrise-main .card .card-box .card-users, .sunrise-main .card .card-box .card-introduction, .sunrise-main .card .card-box .card-link {
   text-align: center;
 }

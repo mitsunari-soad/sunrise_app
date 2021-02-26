@@ -1,24 +1,26 @@
-<div class='introduction'>
-  写真をクリックして詳細をご覧ください。
+<div class="main-box">  
+  <div class='introduction'>
+    写真をクリックして詳細をご覧ください。
+  </div>
+
+  <section class="card">
+    <% @photo.each do |photo|%>
+      <div class="card-box">
+        <%= link_to photo_path(photo.id) do%>
+          <div class="card-content" style="background-image: url(<%= rails_blob_path(photo.image) %>);"></div>
+          <p class="card-users">
+            <%= "#{photo.user.nickname}さん"%>
+          </p>
+        <% end %>
+
+          <p class="card-introduction">
+            <%= photo.prefecture.name %>
+          </p>
+
+          <div class="card-link">
+            <%= link_to '投稿する',new_photo_path %>
+          </div>
+      </div>  
+    <% end %>
+  </section> 
 </div>
-
-<section class="card">
-  <% @photo.each do |photo|%>
-    <div class="card-box">
-      <%= link_to photo_path(photo.id) do%>
-        <div class="card-content" style="background-image: url(<%= rails_blob_path(photo.image) %>);"></div>
-        <p class="card-users">
-          <%= "#{photo.user.nickname}さん"%>
-        </p>
-      <% end %>
-
-        <p class="card-introduction">
-          <%= photo.prefecture.name %>
-        </p>
-
-        <div class="card-link">
-          <%= link_to '投稿する',new_photo_path %>
-        </div>
-    </div>  
-  <% end %>
-</section> 
