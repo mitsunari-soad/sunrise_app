@@ -1,0 +1,20 @@
+<div class="photo-show">
+  <%= image_tag @photo.image, class:"photo-img"%>
+
+  <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-photo">撮影者</th>
+          <td class="detail-value"><%= "#{@photo.user.nickname}さん" %></td>
+        </tr>
+        <tr>
+          <th class="detail-photo">場所</th>
+          <td class="detail-value"><%= @photo.prefecture.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-photo last">説明</th>
+          <td class="detail-value"><%= @photo.introduction %></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
